@@ -87,8 +87,11 @@ public class MusicOrganizer
      * Metodo para listar todos archivos de nuestra coleccion
      */
     public void listAllFiles(){
+        int posicionArchivo;
+        posicionArchivo = 1;
         for(String nombreArchivo : files){
-            System.out.println(nombreArchivo);
+            System.out.println(posicionArchivo + ". " + nombreArchivo);
+            posicionArchivo += 1;
         }
     }
 }
