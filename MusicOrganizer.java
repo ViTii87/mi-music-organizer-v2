@@ -110,4 +110,15 @@ public class MusicOrganizer
             System.out.println("No se ha encontrado ninguna cancion con ese nombre.");
         }
     }
+    
+    /**
+     * Metodo para reproducir los primeros segundos de las canciones de ese artista
+     */
+    public void reproducePrimerosSegundos(String nombreArtista){
+        for(String nombreArchivo : files){
+            if(nombreArchivo.contains(nombreArtista)){
+                player.playSample(nombreArchivo);
+            }
+        }
+    }
 }
