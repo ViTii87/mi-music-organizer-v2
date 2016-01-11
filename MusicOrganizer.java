@@ -82,4 +82,13 @@ public class MusicOrganizer
     {
         player.stop();
     }
+    
+    /**
+     * Metodo para listar todos archivos de nuestra coleccion
+     */
+    public void listAllFiles(){
+        for(String nombreArchivo : files){
+            System.out.println(nombreArchivo);
+        }
+    }
 }
