@@ -94,4 +94,15 @@ public class MusicOrganizer
             posicionArchivo += 1;
         }
     }
+    
+    /**
+     * Metodo para imprimir por pantalla los archivos que coincidan con la cadena introducida por parametro.
+     */
+    public void listMatching(String textoABuscar){
+         for(String nombreArchivo : files){
+            if(nombreArchivo.contains(textoABuscar)){
+                System.out.println(nombreArchivo);
+            }
+        }
+    }
 }
