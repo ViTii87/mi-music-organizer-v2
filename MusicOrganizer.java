@@ -121,4 +121,25 @@ public class MusicOrganizer
             }
         }
     }
+    
+    /**
+     * Metodo que nos devolvera la posicion del primer elemento encontrado pasado por parametro
+     */
+    public int findFirst(String textoABuscar){
+        boolean found = false;
+        int index = 0;
+        
+        while (!found && index < files.size()){
+            if(files.get(index).contains(textoABuscar)){
+                found = true;
+            }
+            else{
+                index += 1;
+            }
+        }
+        if(!found){
+            index = -1;
+        }
+        return index;
+    }
 }
