@@ -128,8 +128,9 @@ public class MusicOrganizer
     public int findFirst(String textoABuscar){
         boolean found = false;
         int index = 0;
+        int tamanhoColeccion = files.size();
         
-        while (!found && index < files.size()){
+        while (!found && index < tamanhoColeccion){
             if(files.get(index).contains(textoABuscar)){
                 found = true;
             }
